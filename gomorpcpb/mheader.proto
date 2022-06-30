@@ -1,0 +1,11 @@
+syntax = "proto3";
+package gomorpcpb;
+option go_package="./";
+
+message MHeader {
+	string service = 1;
+	string method = 2;
+	uint32 id = 3;
+	uint32 error = 4;
+	uint64 timeout = 5;
+}
